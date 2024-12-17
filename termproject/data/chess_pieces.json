@@ -1,0 +1,146 @@
+{
+  "game_settings": {
+    "name": "Custom Chess",
+    "board_size": 8,
+    "turn_limit": 100
+  },
+  "pieces": [
+    {
+      "type": "King",
+      "positions": {
+        "white": [{ "x": 4, "y": 0 }],
+        "black": [{ "x": 4, "y": 7 }]
+      },
+      "movement": {
+        "forward": 1,
+        "sideways": 1,
+        "diagonal": 1
+      },
+      "count": 1
+    },
+    {
+      "type": "Queen",
+      "positions": {
+        "white": [{ "x": 3, "y": 0 }],
+        "black": [{ "x": 3, "y": 7 }]
+      },
+      "movement": {
+        "forward": 8,
+        "sideways": 8,
+        "diagonal": 8
+      },
+      "count": 1
+    },
+    {
+      "type": "Bishop",
+      "positions": {
+        "white": [
+          { "x": 2, "y": 0 },
+          { "x": 5, "y": 0 }
+        ],
+        "black": [
+          { "x": 2, "y": 7 },
+          { "x": 5, "y": 7 }
+        ]
+      },
+      "movement": {
+        "diagonal": 8
+      },
+      "count": 2
+    },
+    {
+      "type": "Knight",
+      "positions": {
+        "white": [
+          { "x": 1, "y": 0 },
+          { "x": 6, "y": 0 }
+        ],
+        "black": [
+          { "x": 1, "y": 7 },
+          { "x": 6, "y": 7 }
+        ]
+      },
+      "movement": {
+        "l_shape": true
+      },
+      "count": 2
+    },
+    {
+      "type": "Rook",
+      "positions": {
+        "white": [
+          { "x": 0, "y": 0 },
+          { "x": 7, "y": 0 }
+        ],
+        "black": [
+          { "x": 0, "y": 7 },
+          { "x": 7, "y": 7 }
+        ]
+      },
+      "movement": {
+        "forward": 8,
+        "sideways": 8
+      },
+      "count": 2
+    },
+    {
+      "type": "Pawn",
+      "positions": {
+        "white": [
+          { "x": 0, "y": 1 },
+          { "x": 1, "y": 1 },
+          { "x": 2, "y": 1 },
+          { "x": 3, "y": 1 },
+          { "x": 4, "y": 1 },
+          { "x": 5, "y": 1 },
+          { "x": 6, "y": 1 },
+          { "x": 7, "y": 1 }
+        ],
+        "black": [
+          { "x": 0, "y": 6 },
+          { "x": 1, "y": 6 },
+          { "x": 2, "y": 6 },
+          { "x": 3, "y": 6 },
+          { "x": 4, "y": 6 },
+          { "x": 5, "y": 6 },
+          { "x": 6, "y": 6 },
+          { "x": 7, "y": 6 }
+        ]
+      },
+      "movement": {
+        "forward": 1,
+        "diagonal_capture": 1,
+        "first_move_forward": 2
+      },
+      "count": 8
+    }
+  ],
+  "portals": [
+    {
+      "type": "Portal",
+      "id": "portal1",
+      "positions": {
+        "entry": { "x": 2, "y": 3 },
+        "exit": { "x": 5, "y": 4 }
+      },
+      "properties": {
+        "preserve_direction": true,
+        "allowed_colors": ["white", "black"],
+        "cooldown": 1
+      }
+    },
+    {
+      "type": "Portal",
+      "id": "portal2",
+      "positions": {
+        "entry": { "x": 6, "y": 2 },
+        "exit": { "x": 1, "y": 5 }
+      },
+      "properties": {
+        "preserve_direction": false,
+        "allowed_colors": ["white"],
+        "cooldown": 2
+      }
+    }
+  ]
+}
