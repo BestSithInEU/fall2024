@@ -1,0 +1,15 @@
+{
+  "vertices": 6,
+  "edges": [
+    { "from": 0, "to": 1, "weight": 16 },
+    { "from": 0, "to": 2, "weight": 13 },
+    { "from": 1, "to": 2, "weight": 10 },
+    { "from": 1, "to": 3, "weight": 12 },
+    { "from": 2, "to": 1, "weight": 4 },
+    { "from": 2, "to": 4, "weight": 14 },
+    { "from": 3, "to": 2, "weight": 9 },
+    { "from": 3, "to": 5, "weight": 20 },
+    { "from": 4, "to": 3, "weight": 7 },
+    { "from": 4, "to": 5, "weight": 4 }
+  ]
+}

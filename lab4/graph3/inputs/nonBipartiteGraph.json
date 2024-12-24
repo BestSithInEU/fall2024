@@ -1,0 +1,8 @@
+{
+  "vertices": 3,
+  "edges": [
+    { "from": 0, "to": 1, "weight": 1 },
+    { "from": 1, "to": 2, "weight": 1 },
+    { "from": 2, "to": 0, "weight": 1 }
+  ]
+}
